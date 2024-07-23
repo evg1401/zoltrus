@@ -1,0 +1,27 @@
+// Write your overrides
+@import 'https://fonts.googleapis.com/css?family=Inter';
+
+body {
+  font-family: Inter, sans-serif;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    letter-spacing: normal;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: normal;
+  }
+
+  h3 {
+    font-size: 1.185rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    letter-spacing: normal;
+  }
+}

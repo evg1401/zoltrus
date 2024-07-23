@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  nuxt:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        API_URL: https://api/
+    container_name: nuxt-app
+    volumes:
+      - /home/admin/web/zoltrus.ru/app:/web
+      - /web/node_modules
+      - /web/.output
+    ports:
+      - "8095:3000"
+    networks:
+      - nuxt-network
+networks:
+  nuxt-network:
+    driver: bridge
